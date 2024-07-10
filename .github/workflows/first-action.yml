@@ -8,3 +8,9 @@ jobs:
         run:  echo "Hello World!"
       - name: Print goodbye
         run:  echo "Done - bye!"
+  one-step-first-job: 
+    runs-on: ubuntu-latest
+    steps: |
+      - name: Print greeting
+        run:  echo "Hello World!"
+        run:  echo "Done - bye!"
