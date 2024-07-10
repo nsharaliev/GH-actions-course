@@ -10,7 +10,8 @@ jobs:
         run:  echo "Done - bye!"
   one-step-first-job: 
     runs-on: ubuntu-latest
-    steps: |
+    steps: 
       - name: Print greeting
-        run:  echo "Hello World!"
-        run:  echo "Done - bye!"
+        run: |
+          echo "Hello World!"
+          echo "Done - bye!"
